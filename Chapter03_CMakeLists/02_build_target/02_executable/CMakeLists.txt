@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.12)
+project(APP VERSION 1.0.0 LANGUAGES C CXX)
+
+file(GLOB_RECURSE MATH_LIB_SRC src/math/*.c)
+add_library(math STATIC ${MATH_LIB_SRC})
+
+add_executable(demo src/main.c)
+target_link_libraries(demo math)
