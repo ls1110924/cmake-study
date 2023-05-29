@@ -15,12 +15,12 @@ install(TARGETS math demo
 file(GLOB_RECURSE HEADERS src/math/*.h)
 install(FILES ${HEADERS} DESTINATION include/math)
 
-include(CPack)
 set(CPACK_GENERATOR "ZIP")
 set(CPACK_OUTPUT_FILE_PREFIX "")
 set(CPACK_INSTALL_PREFIX "")
 set(CPACK_PACKAGE_NAME "CDemo")
 set(CPACK_PACKAGE_VERSION ${PROJECT_VERSION})
 set(CPACK_SET_DESTDIR ON)
+include(CPack)
 
 
