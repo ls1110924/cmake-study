@@ -35,7 +35,7 @@ _deps
 
 # Libraries
 *.lib
-*.a
+#*.a
 *.la
 *.lo
 
@@ -70,6 +70,7 @@ dkms.conf
 
 # Build
 build/
+output/
 
 # Mac OS
 .DS_Store
